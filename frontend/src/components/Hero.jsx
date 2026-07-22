@@ -27,10 +27,30 @@ function Hero() {
       className="relative scroll-mt-24 overflow-hidden px-6 py-16 sm:px-8 lg:px-8 lg:py-28"
     >
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(37,99,235,0.18),_transparent_45%)]" />
-      <div className="absolute inset-y-0 right-0 -z-10 w-1/2 bg-[radial-gradient(circle,_rgba(37,99,235,0.14),_transparent_65%)] blur-3xl" />
 
-      <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
-        <div className="max-w-2xl">
+      {/* Full-bleed diagonal image panel (desktop only) */}
+      <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[46%] lg:block [clip-path:polygon(12%_0,100%_0,100%_100%,0_100%)]">
+        <img
+          src={heroWorkbench}
+          alt="Disassembled PS5 controller on a repair workbench with precision tools"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0c1322] via-[#0c1322]/15 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0c1322]/70 via-transparent to-transparent" />
+
+        <div className="pointer-events-auto absolute inset-x-6 bottom-6 flex items-center justify-between rounded-2xl border border-[#2563eb]/20 bg-[#0c1322]/80 p-4 backdrop-blur-sm">
+          <div>
+            <p className="text-sm text-[#8f95a8]">Every repair includes</p>
+            <h3 className="mt-1 text-lg font-semibold text-[#f9fafb]">
+              Full Parts & Labor Warranty
+            </h3>
+          </div>
+          <div className="h-2.5 w-2.5 shrink-0 rounded-full bg-[#2563eb] shadow-[0_0_10px_rgba(37,99,235,0.8)]" />
+        </div>
+      </div>
+
+      <div className="relative mx-auto max-w-7xl">
+        <div className="max-w-xl lg:max-w-lg">
           <div className="mb-6 flex flex-wrap gap-2">
             <span className="rounded-full border border-[#2563eb]/40 bg-[#2563eb]/10 px-3 py-1 text-sm font-medium text-[#b4c5ff]">
               Xbox Certified
@@ -90,12 +110,13 @@ function Hero() {
           </div>
         </div>
 
-        <div className="relative">
+        {/* Stacked image fallback (mobile/tablet) */}
+        <div className="mt-12 lg:hidden">
           <div className="relative overflow-hidden rounded-[28px] border border-[#434655] shadow-[0_20px_80px_rgba(2,6,23,0.45)]">
             <img
               src={heroWorkbench}
               alt="Disassembled PS5 controller on a repair workbench with precision tools"
-              className="aspect-video w-full object-cover lg:aspect-[4/5]"
+              className="aspect-video w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0c1322]/70 via-transparent to-transparent" />
 
