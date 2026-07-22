@@ -3,7 +3,7 @@ import services from '../data/services'
 
 function Services() {
   return (
-    <section id="services" className="scroll-mt-24 border-t border-[#434655]/70 px-6 py-16 lg:px-8">
+    <section id="services" className="scroll-mt-24 border-t border-[#434655]/70 bg-[#0d1117] px-6 py-16 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">

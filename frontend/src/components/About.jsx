@@ -18,7 +18,7 @@ function About() {
             </p>
 
             <div className="mt-8 rounded-2xl border border-[#434655] bg-[#0c1322]/70 p-5">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#b4c5ff]">Technical precision guaranteed</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#b4c5ff]">Built on diagnostics, not guesswork</p>
               <p className="mt-2 text-sm leading-7 text-[#c3c6d7]">
                 Specialized repair work, careful diagnostics, and a clear commitment to quality from start to finish.
               </p>

@@ -8,7 +8,7 @@ function Footer() {
       <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-4">
         <div className="space-y-4 md:col-span-1">
           <Logo />
-          <p className="text-sm text-[#8f95a8]">Technical Precision Guaranteed</p>
+          <p className="text-sm text-[#8f95a8]">Certified PS5 & Xbox Repairs</p>
           <p className="max-w-sm text-sm leading-7 text-[#c3c6d7]">
             Specialized controller repair services for PS5, Xbox Series X/S, and Elite hardware.
           </p>
@@ -46,7 +46,7 @@ function Footer() {
       </div>
 
       <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-[#434655] pt-6 text-sm text-[#8f95a8] md:flex-row md:items-center md:justify-between">
-        <p>© {year} ControlFix Pro. Technical Precision Guaranteed.</p>
+        <p>© {year} ControlFix Pro. All rights reserved.</p>
         <div className="flex flex-wrap gap-4">
           <a href="#" className="transition hover:text-[#f9fafb]">Privacy Policy</a>
           <a href="#" className="transition hover:text-[#f9fafb]">Terms of Service</a>

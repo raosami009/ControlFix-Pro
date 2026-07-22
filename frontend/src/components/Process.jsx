@@ -15,8 +15,8 @@ function Process() {
           </p>
         </div>
 
-        <div className="relative mt-12 grid gap-6 md:grid-cols-3">
-          <div className="absolute left-0 top-7 hidden h-px w-full bg-gradient-to-r from-[#2563eb]/0 via-[#2563eb]/40 to-[#2563eb]/0 md:block" />
+        <div className="relative mt-16 flex flex-col gap-8 md:grid md:grid-cols-3 md:gap-6">
+          <div className="absolute left-7 top-0 h-full w-px bg-gradient-to-b from-[#434655] via-[#434655]/60 to-transparent md:left-0 md:top-7 md:h-px md:w-full md:bg-none md:bg-[#434655]" />
           {processSteps.map((step) => (
             <ProcessStep key={step.title} step={step} />
           ))}

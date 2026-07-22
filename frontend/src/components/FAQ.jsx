@@ -5,7 +5,7 @@ function FAQ() {
   return (
     <section
       id="faq"
-      className="scroll-mt-24 border-t border-[#434655]/70 px-6 py-20 lg:px-8"
+      className="scroll-mt-24 border-t border-[#434655]/70 bg-[#0d1117] px-6 py-20 lg:px-8"
     >
       <div className="mx-auto max-w-7xl">
         <div className="max-w-2xl">
