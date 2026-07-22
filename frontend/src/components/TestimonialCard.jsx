@@ -19,7 +19,7 @@ function TestimonialCard({ testimonial }) {
       </blockquote>
 
       <div className="mt-8 border-t border-[#434655] pt-5">
-        <h3 className="font-semibold text-white">
+        <h3 className="font-semibold text-[#f9fafb]">
           {testimonial.name}
         </h3>
 

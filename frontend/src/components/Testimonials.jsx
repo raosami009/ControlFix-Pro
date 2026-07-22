@@ -14,7 +14,7 @@ function Testimonials() {
             Testimonials
           </p>
 
-          <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-semibold text-[#f9fafb] sm:text-4xl">
             What Our Customers Say
           </h2>
 

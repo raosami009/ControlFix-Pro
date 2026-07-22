@@ -12,13 +12,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --brand-primary: #2563eb;
+  --brand-primary-hover: #1d4ed8;
   --brand-primary-soft: #b4c5ff;
   --surface: #0c1322;
   --surface-elevated: #111827;
   --surface-strong: #1f2937;
   --border: #434655;
+  --text-heading: #f9fafb;
   --text-main: #dce2f7;
   --text-muted: #c3c6d7;
+  --text-faint: #8f95a8;
+  --rating: #facc15;
+  --danger: #ffb4ab;
 }
 
 html {
@@ -45,6 +50,29 @@ a {
 ::selection {
   background: #2563eb;
   color: #eef2ff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-strong);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border);
 }
 
 @media (prefers-reduced-motion: reduce) {

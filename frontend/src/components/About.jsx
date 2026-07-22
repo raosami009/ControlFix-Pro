@@ -1,9 +1,11 @@
 import ReasonCard from './ReasonCard'
 import reasons from '../data/reasons'
+import aboutDetail from '../assets/images/about-detail.png'
+import aboutWorkshop from '../assets/images/about-workshop.png'
 
 function About() {
   return (
-    <section id="about" className="-scroll-mt-14 px-6 py-16 lg:px-8">
+    <section id="about" className="scroll-mt-24 px-6 py-16 lg:px-8">
       <div className="mx-auto max-w-7xl rounded-[32px] border border-[#434655] bg-gradient-to-br from-[#2563eb]/10 to-[#0c1322]/90 p-8 shadow-[0_20px_80px_rgba(2,6,23,0.35)] lg:p-12">
         <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <div className="max-w-2xl">
@@ -25,14 +27,14 @@ function About() {
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="overflow-hidden rounded-2xl border border-[#434655]">
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsrZI82cRrcz3QmjBy4x3RGkvzY4iTO5PIxsTjk6B40oBusNXeBmihIwdd9cisK3kYZ8Qj76Gx76w0Q50rPGpI3bXKgzXSYcqZJgt_54l2jTGRPb1XaNZ3ZvsA97cOtpI_RAOsU1Pqo4Qeae8_wPspWdhEJln3Ven1LEsMJjNvAtK_ZlT05xPGNATJ3GAqRQStx5YXBXQCMk5cCSQtIJP4jAldTAe1DvOuPjoV_rH3YnvlzZlAJqNguLvUbwd_MOmOlQMTTT7rGbUh"
+                  src={aboutDetail}
                   alt="Controller repair detail"
                   className="h-48 w-full object-cover"
                 />
               </div>
               <div className="overflow-hidden rounded-2xl border border-[#434655]">
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbqS_iYpvp9Mdpc_Gz89xoT277joEjULSOlw3dGSHq_6lP6Crcrwt7j_B0jaGAcjRKSaQAIinTovruijT6Sv4X48HjR9lPPON6xpCBwMID4qffS6Wn6MR8Dbsv_58gU49A-e1iJCb1ZDF8hSk6DwjFtpO0zATrrN-hLdQWFfce1q-k7hG9-v_Oqb0A9h63Fe8ClhG9CDQmvNCLPseJcpTz2QnX4oUnpgU-wQNaxDwGjAMbVJJdARZOni8s_zn-s3jI9cTqP9TL7m4U"
+                  src={aboutWorkshop}
                   alt="Controller workshop setup"
                   className="h-48 w-full object-cover"
                 />
