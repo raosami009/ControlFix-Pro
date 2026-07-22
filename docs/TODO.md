@@ -16,20 +16,5 @@
 - [ ] FAQ
 - [ ] Footer
 
-## Authentication
-- [ ] Login
-- [ ] Register
-- [ ] Forgot Password
-- [ ] Reset Password
 
-## Other Pages
-- [ ] About
-- [ ] Contact
-- [ ] Dashboard
-- [ ] Profile
 
-## Final
-- [ ] Responsive
-- [ ] Performance
-- [ ] Testing
-- [ ] Deploy
