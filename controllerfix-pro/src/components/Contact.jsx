@@ -83,7 +83,7 @@ export default function Contact() {
                   required
                   value={form.name}
                   onChange={update("name")}
-                  className="w-full rounded-xl border border-line bg-bg px-4 py-3 text-sm text-white placeholder:text-text-faint focus-visible:border-accent-2-soft"
+                  className="w-full rounded-xl border border-line bg-bg px-4 py-3 text-sm text-white transition-all duration-200 placeholder:text-text-faint focus-visible:border-accent-2-soft"
                   placeholder="Your name"
                 />
               </div>
@@ -100,7 +100,7 @@ export default function Contact() {
                   required
                   value={form.email}
                   onChange={update("email")}
-                  className="w-full rounded-xl border border-line bg-bg px-4 py-3 text-sm text-white placeholder:text-text-faint focus-visible:border-accent-2-soft"
+                  className="w-full rounded-xl border border-line bg-bg px-4 py-3 text-sm text-white transition-all duration-200 placeholder:text-text-faint focus-visible:border-accent-2-soft"
                   placeholder="you@email.com"
                 />
               </div>
@@ -118,7 +118,7 @@ export default function Contact() {
                 rows={4}
                 value={form.message}
                 onChange={update("message")}
-                className="w-full resize-none rounded-xl border border-line bg-bg px-4 py-3 text-sm text-white placeholder:text-text-faint focus-visible:border-accent-2-soft"
+                className="w-full resize-none rounded-xl border border-line bg-bg px-4 py-3 text-sm text-white transition-all duration-200 placeholder:text-text-faint focus-visible:border-accent-2-soft"
                 placeholder="Tell us about your controller issue..."
               />
             </div>
