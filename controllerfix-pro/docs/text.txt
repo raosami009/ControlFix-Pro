@@ -1,0 +1,150 @@
+Site info: ControllerFix Pro — PS5/Xbox controller repair service, Mississauga-based with Canada-wide mail-in. Title: "ControllerFix Pro | Mississauga's PS5 & Xbox Controller Repair Specialists." Meta description: "Expert PS5 and Xbox controller repair in Mississauga. Stick drift, trigger, button, and charging port fixes with warranty. Local drop-off or mail-in from anywhere in Canada." Domain in canonical/og tags: controlfixpro.com (placeholder, flagged earlier — not registered under new brand name). Stack: React 19 + Vite + Tailwind v4, one-page scroll site with anchor nav.
+
+Flag: <meta name="theme-color" content="#12091f"> in index.html:9 is a leftover from before the recolor — doesn't match current #10012a bg. Say the word and I'll fix it.
+
+Sections in sequence:
+
+1. Navbar — Logo "ControllerFix Pro" · Home / Services / Process / About / Reviews / FAQ / Contact · CTA "Repair Now"
+
+2. Hero — Badges: "Xbox Certified" · "PS5 Specialist" — H1: "Mississauga's PS5 & Xbox Controller Repair Specialists." — Sub: "Stick drift, trigger fixes, button replacements, and more. Drop off locally in Mississauga or mail your controller from anywhere in Canada." — CTAs: "Book Your Repair" / "Get a Free Quote" — side card: "Every repair includes / Full Parts & Labor Warranty" — stat row: 500+ Controllers Repaired · 24-48h Typical Turnaround · 90-Day Parts & Labor Warranty
+
+3. Highlights — Local Drop-Off or Mail-In · 90-Day Warranty · Secure Booking (No Upfront Payment) · Real Human Support (descriptions as drafted earlier)
+
+4. Trust Strip — Xbox Certified · PS5 Authorized Parts · 5.0 Google Rated · Ontario Registered · Insured Shipping
+
+5. Services (6) — Stick Drift Repair · Trigger & Bumper Repair · Button Replacement · Charging Port Fix · Battery Replacement · Deep Cleaning
+
+6. Feel It Banner — "Feel It Now" — "Like New, Every Time." — "Precision-tuned sticks, crisp triggers, and a clean shell — repaired to feel exactly like it did on day one."
+
+7. Process (3 steps) — 01 Tell Us the Issue · 02 Drop Off or Mail In · 03 Get Your Controller Back
+
+8. About — "About us" — "Why Gamers Choose ControllerFix Pro." — "We focus exclusively on next-gen console controllers for ultimate expertise and dependable results." — callout: "Built on diagnostics, not guesswork" — reason cards: Specialized PS5/Xbox · Fast Turnaround · Transparent Pricing
+
+9. Promo Banner — "Limited Time" — "Free Diagnostics With Every Repair" — "Book this week and we'll assess every stick, trigger, and port at no extra charge — even if you only came in for one fix." — CTA "Book Your Repair"
+
+10. Stats Banner — 500+ Controllers Repaired · 24-48h Typical Turnaround · 90-Day Parts & Labor Warranty · 5.0 Average Customer Rating
+
+11. Testimonials — "What Our Customers Say" — J. Patel (PS5 Stick Drift Repair), M. Chen (Xbox Elite Trigger Repair), S. Ahmed (Mail-In Customer) + quotes
+
+12. FAQ (3) — controller types supported · turnaround time · mail-in service
+
+13. Blog Teasers (3) — "5 Signs Your Charging Port Needs Repair" · "What's Actually Causing Your Stick Drift" · "How Often Should You Deep Clean a Controller"
+
+14. Newsletter — "Stay in the loop" — "Get Repair Tips & Exclusive Offers" — "Occasional emails on controller care, seasonal promos, and new turnaround-time updates. No spam." — CTA "Subscribe"
+
+15. Contact — "Contact" — "Ready to Fix Your Controller?" — "Don't let drift or broken buttons end your game..." — email/phone/location block — CTA "Repair Now"
+
+16. Footer — tagline "Certified PS5 & Xbox Repairs" · nav links · contact info · hours (Mon-Fri 10-7, Sat 11-5, Sun Closed) · social icons (placeholder) · "© {year} ControllerFix Pro."
+
+
+## Project Overview
+
+| Item | Details |
+|------|---------|
+| Business type | PlayStation and Xbox controller repair service |
+| Service area | Canada-wide (mail-in); Mississauga, Ontario (local drop-off) |
+| Launch objective | Create a customer-friendly website that explains services, shows transparent fixed pricing, supports both local drop-off and Canada-wide mail-in repair, and drives online bookings |
+
+---
+
+## Business Goals
+
+1. Establish ControllerFix Pro as a trusted controller repair brand in Canada
+2. Make it easy for customers to book local drop-off appointments online
+3. Make it easy for mail-in customers across Canada to submit repair requests and receive shipping instructions
+4. Use transparent fixed pricing to reduce friction and improve conversion
+5. Launch quickly using simple tools, third-party scheduling, and AI-assisted development (no traditional developer needed)
+
+---
+
+## Target Users
+
+**Primary:** Gamers across Canada with broken PlayStation or Xbox controllers
+
+**Secondary:** Local customers in Mississauga who want faster drop-off service
+
+**Psychographic:** Value-conscious customers who prefer repair over buying a new controller; customers who want a reliable, simple, and affordable process
+
+---
+
+## Service Model
+
+### Fulfillment options
+
+**Local drop-off (Mississauga, Ontario):**
+- Target turnaround: 1 to 2 business days
+- Customers book time slots online
+- Customers drop off controller at Mobyli location
+- Full address and hours will be provided after booking confirmation
+
+**Mail-in (Canada-wide):**
+- Target turnaround: 2 to 4 business days after receipt
+- Customers submit repair requests online
+- Mobyli sends prepaid return shipping label after payment
+- Customers mail controller to Mobyli
+- Prepaid outbound and inbound shipping available at standard rates
+
+### Service promise
+
+- Response time: within 24 hours
+- Warranty: 30 days on the repaired issue only
+- Payment: Customer pays after selecting repair type and before shipping/drop-off
+- Shipping label generation: Only after payment is received
+
+---
+
+## Supported Devices
+
+- PS5 DualSense
+- PS5 DualSense Edge
+- Xbox Series X|S controllers
+- PS4 controllers
+- Xbox One controllers
+- Xbox Elite Series controllers
+
+---
+
+## Supported Repair Services
+
+### Core repairs
+
+| Service | Price |
+|---------|-------|
+| Stick drift repair (one stick) | $25 CAD |
+| Stick drift repair (both sticks) | $45 CAD |
+| OEM joystick replacement (each) | $30 CAD |
+| TMR joystick replacement (one stick) | $30 CAD |
+| TMR joystick replacement (both sticks) | $50 CAD |
+| Trigger repair | From $35 CAD |
+| Button repair | From $30 CAD |
+| USB-C / charging port replacement | From $49 CAD |
+| Battery replacement | From $35 CAD |
+
+### Add-on services
+
+| Service | Price |
+|---------|-------|
+| Cleaning service | $10 CAD |
+| Deep cleaning | $10 CAD |
+| Shell replacement | $25 CAD + shell cost |
+| Thumbstick cap replacement | From $15 CAD |
+| Button cap replacement | From $15 CAD |
+
+### Service descriptions
+
+**Stick drift repair:** Standard repair service using proven techniques to restore normal stick function without replacement. Recommended as the default stick drift solution.
+
+**OEM joystick replacement:** Replaces the thumbstick module with a standard-style replacement designed to restore normal controller performance. Available for PS5 DualSense, PS5 DualSense Edge, Xbox Series X|S, PS4, Xbox One, and Xbox Elite Series controllers.
+
+**TMR joystick replacement:** Uses advanced drift-resistant joystick technology with electromagnet Hall effect sensors. Positioned as a premium option for customers who want improved durability and precision. More resistant to stick drift. Available for PS5 DualSense, PS5 DualSense Edge, Xbox Series X|S, PS4, Xbox One, and Xbox Elite Series controllers.
+
+**Cleaning service:** Basic cleaning add-on that can be paired with any repair service ($10). Also available as a standalone deep cleaning service ($10) — same pricing, bundled for upsell value.
+
+### Pricing rules
+
+- Transparent fixed pricing will be shown publicly on all service pages
+- Multiple issues on the same controller use add-on pricing per issue
+- Customers can choose between standard stick drift repair, OEM joystick replacement, or TMR joystick replacement
+- TMR joystick replacement is positioned as the premium, drift-resistant upgrade from standard stick drift repair
+- Cleaning service can be added as an optional add-on during booking
+- "Starting from" language can be used for premium models (DualSense Edge, Xbox Elite Series) to account for potential model-specific cost variations
