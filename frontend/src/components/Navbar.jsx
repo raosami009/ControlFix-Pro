@@ -46,9 +46,9 @@ function Navbar() {
   const closeMenu = () => setIsMenuOpen(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#434655] bg-[#0c1322]/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-[#3a2d56] bg-[#12091f]/90 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#home" className="flex items-center gap-3 text-lg font-semibold text-[#f9fafb]">
+        <a href="#home" className="flex items-center gap-3 text-lg font-semibold text-[#f5f2fa]">
           <Logo />
         </a>
 
@@ -57,10 +57,10 @@ function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className={`relative py-1 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#2563eb] after:transition-transform after:duration-300 ${
+              className={`relative py-1 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#8b5cf6] after:transition-transform after:duration-300 ${
                 activeId === link.id
-                  ? "text-[#b4c5ff] after:scale-x-100"
-                  : "text-[#c3c6d7] hover:text-[#b4c5ff]"
+                  ? "text-[#b18cff] after:scale-x-100"
+                  : "text-[#9c93b0] hover:text-[#b18cff]"
               }`}
             >
               {link.label}
@@ -71,7 +71,7 @@ function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href="#contact"
-            className="hidden rounded-full border border-[#2563eb]/40 bg-[#2563eb]/10 px-4 py-2 text-sm font-medium text-[#b4c5ff] transition hover:bg-[#2563eb]/20 sm:inline-flex"
+            className="hidden rounded-full bg-gradient-to-r from-[#e93d9a] to-[#8b5cf6] px-4 py-2 text-sm font-medium text-white shadow-[0_0_20px_rgba(139,92,246,0.25)] transition hover:brightness-110 sm:inline-flex"
           >
             Repair Now
           </a>
@@ -82,7 +82,7 @@ function Navbar() {
             aria-label="Open menu"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
-            className="rounded-full border border-[#434655] p-2 text-[#dce2f7] transition hover:border-[#2563eb]/40 hover:text-[#b4c5ff] md:hidden"
+            className="rounded-full border border-[#3a2d56] p-2 text-[#e6e1f0] transition hover:border-[#8b5cf6]/40 hover:text-[#b18cff] md:hidden"
           >
             <Menu className="h-5 w-5" aria-hidden="true" />
           </button>
@@ -92,13 +92,13 @@ function Navbar() {
       {isMenuOpen && (
         <div
           id="mobile-menu"
-          className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 overflow-y-auto bg-[#0c1322] px-6 py-20 md:hidden"
+          className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 overflow-y-auto bg-[#12091f] px-6 py-20 md:hidden"
         >
           <button
             type="button"
             onClick={closeMenu}
             aria-label="Close menu"
-            className="absolute right-6 top-6 rounded-full border border-[#434655] p-2 text-[#dce2f7] transition hover:border-[#2563eb]/40 hover:text-[#b4c5ff]"
+            className="absolute right-6 top-6 rounded-full border border-[#3a2d56] p-2 text-[#e6e1f0] transition hover:border-[#8b5cf6]/40 hover:text-[#b18cff]"
           >
             <X className="h-5 w-5" aria-hidden="true" />
           </button>
@@ -108,8 +108,8 @@ function Navbar() {
               key={link.href}
               href={link.href}
               onClick={closeMenu}
-              className={`text-2xl font-semibold transition hover:text-[#b4c5ff] ${
-                activeId === link.id ? "text-[#b4c5ff]" : "text-[#f9fafb]"
+              className={`text-2xl font-semibold transition hover:text-[#b18cff] ${
+                activeId === link.id ? "text-[#b18cff]" : "text-[#f5f2fa]"
               }`}
             >
               {link.label}
@@ -119,7 +119,7 @@ function Navbar() {
           <a
             href="#contact"
             onClick={closeMenu}
-            className="mt-4 rounded-full bg-[#2563eb] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1d4ed8]"
+            className="mt-4 rounded-full bg-gradient-to-r from-[#e93d9a] to-[#8b5cf6] px-6 py-3 text-sm font-medium text-white transition hover:brightness-110"
           >
             Repair Now
           </a>

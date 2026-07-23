@@ -3,20 +3,20 @@ import processSteps from '../data/process'
 
 function Process() {
   return (
-    <section id="process" className="scroll-mt-24 border-t border-[#434655]/70 px-6 py-16 lg:px-8">
+    <section id="process" className="scroll-mt-24 border-t border-[#3a2d56]/70 px-6 py-16 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#b4c5ff]">Our process</p>
-          <h2 className="mt-3 text-3xl font-semibold text-[#f9fafb] sm:text-4xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#b18cff]">Our process</p>
+          <h2 className="mt-3 text-3xl font-semibold text-[#f5f2fa] sm:text-4xl">
             How It Works
           </h2>
-          <p className="mt-4 text-lg leading-8 text-[#c3c6d7]">
+          <p className="mt-4 text-lg leading-8 text-[#9c93b0]">
             Getting your game back on track in three simple steps.
           </p>
         </div>
 
         <div className="relative mt-16 flex flex-col gap-8 md:grid md:grid-cols-3 md:gap-6">
-          <div className="absolute left-7 top-0 h-full w-px bg-gradient-to-b from-[#434655] via-[#434655]/60 to-transparent md:left-0 md:top-7 md:h-px md:w-full md:bg-none md:bg-[#434655]" />
+          <div className="absolute left-7 top-0 h-full w-px bg-gradient-to-b from-[#3a2d56] via-[#3a2d56]/60 to-transparent md:left-0 md:top-7 md:h-px md:w-full md:bg-none md:bg-[#3a2d56]" />
           {processSteps.map((step) => (
             <ProcessStep key={step.title} step={step} />
           ))}
