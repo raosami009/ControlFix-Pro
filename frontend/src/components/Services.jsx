@@ -3,20 +3,20 @@ import services from '../data/services'
 
 function Services() {
   return (
-    <section id="services" className="scroll-mt-24 border-t border-[#3a2d56]/70 bg-[#1b1030] px-6 py-16 lg:px-8">
+    <section id="services" className="scroll-mt-24 border-t border-[#3a2450]/70 bg-[#270b39] px-6 py-16 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#b18cff]">What We Do</p>
-            <h2 className="mt-3 text-3xl font-semibold text-[#f5f2fa] sm:text-4xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#c9a0f0]">What We Do</p>
+            <h2 className="mt-3 text-3xl font-semibold text-[#ffffff] sm:text-4xl">
               Precision Component Repairs
             </h2>
-            <p className="mt-4 text-lg leading-8 text-[#9c93b0]">
+            <p className="mt-4 text-lg leading-8 text-[#9f99aa]">
               Every repair is performed in our Mississauga lab using high-grade replacement parts that meet or exceed OEM specifications.
             </p>
           </div>
 
-          <a href="#contact" className="inline-flex items-center gap-2 text-sm font-semibold text-[#b18cff] transition hover:text-[#f5f2fa]">
+          <a href="#contact" className="inline-flex items-center gap-2 text-sm font-semibold text-[#c9a0f0] transition hover:text-[#ffffff]">
             Book a consultation
             <span aria-hidden="true">→</span>
           </a>
