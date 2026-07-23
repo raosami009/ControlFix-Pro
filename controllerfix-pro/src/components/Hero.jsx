@@ -5,7 +5,6 @@ import Reveal from "./ui/Reveal"
 import Button from "./ui/Button"
 import StatItem from "./ui/StatItem"
 import { stats } from "../data/stats"
-import iconMark from "../assets/brand/icon-mark-transparent.png"
 import heroImage from "../assets/images/dualsense-controller-front.png"
 
 export default function Hero() {
@@ -28,8 +27,7 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-content items-center gap-16 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:px-10">
         <div>
-          <Reveal className="flex items-center gap-3">
-            <img src={iconMark} alt="" className="h-11 w-11 shrink-0" />
+          <Reveal>
             <span className="font-heading text-xl font-bold uppercase tracking-[0.08em] text-white">
               Controller<span className="text-gradient-fix">Fix</span> Pro
             </span>
