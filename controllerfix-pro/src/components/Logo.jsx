@@ -1,11 +1,11 @@
 import iconMark from "../assets/brand/icon-mark-transparent.png"
 
-export default function Logo({ variant = "full", size = "md", className = "" }) {
+export default function Logo({ variant = "full", size = "md", className = "", href = "#home" }) {
   const iconHeight = size === "lg" ? "h-9" : "h-7"
 
   return (
     <a
-      href="#home"
+      href={href}
       className={`flex items-center gap-2.5 font-heading font-bold tracking-wide ${className}`}
       aria-label="ControllerFix Pro — home"
     >

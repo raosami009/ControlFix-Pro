@@ -3,11 +3,29 @@ import { AnimatePresence, motion } from "motion/react"
 import iconMark from "../assets/brand/icon-mark-transparent.png"
 
 const MIN_DISPLAY_MS = 1200
+const VISITED_KEY = "cf-visited"
+
+function shouldShowLoader() {
+  let alreadyVisited = false
+  try {
+    alreadyVisited = sessionStorage.getItem(VISITED_KEY) === "1"
+    sessionStorage.setItem(VISITED_KEY, "1")
+  } catch {
+    return true
+  }
+
+  const [entry] = performance.getEntriesByType?.("navigation") ?? []
+  const isReload = entry?.type === "reload"
+
+  return isReload || !alreadyVisited
+}
 
 export default function LoadingScreen() {
-  const [visible, setVisible] = useState(true)
+  const [visible, setVisible] = useState(shouldShowLoader)
 
   useEffect(() => {
+    if (!visible) return
+
     document.body.style.overflow = "hidden"
     const start = Date.now()
 
@@ -23,7 +41,7 @@ export default function LoadingScreen() {
     }
 
     return () => window.removeEventListener("load", finish)
-  }, [])
+  }, [visible])
 
   useEffect(() => {
     if (!visible) document.body.style.overflow = ""

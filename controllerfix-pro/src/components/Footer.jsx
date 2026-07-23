@@ -1,9 +1,13 @@
 import { Mail, MapPin, Clock } from "lucide-react"
 import Logo from "./Logo"
 import { InstagramIcon, FacebookIcon, XIcon } from "./ui/Icons"
-import { navLinks } from "../data/nav"
 
 const CONTACT_EMAIL = "hello@controlfixpro.com"
+
+const legalLinks = [
+  { label: "Privacy Policy", href: "/privacy.html" },
+  { label: "Terms & Conditions", href: "/terms.html" },
+]
 
 const hours = [
   ["Mon – Fri", "10:00 AM – 7:00 PM"],
@@ -17,13 +21,13 @@ const socials = [
   { icon: XIcon, label: "X" },
 ]
 
-export default function Footer() {
+export default function Footer({ logoHref = "#home" }) {
   return (
     <footer className="border-t border-line/60 bg-bg-deep">
       <div className="mx-auto max-w-content px-6 py-16 lg:px-10">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Logo />
+            <Logo href={logoHref} />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-text-muted">
               Certified PS5 &amp; Xbox Repairs
             </p>
@@ -31,10 +35,10 @@ export default function Footer() {
 
           <div>
             <h3 className="font-heading text-sm font-semibold uppercase tracking-wide text-white">
-              Navigate
+              Legal
             </h3>
             <ul className="mt-4 space-y-2.5">
-              {navLinks.map((link) => (
+              {legalLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
