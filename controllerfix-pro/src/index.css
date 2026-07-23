@@ -78,11 +78,11 @@ h4,
   border-radius: 2px;
 }
 
-/* Signature gradient — violet to indigo/blue (pink is reserved for the logo mark only) */
+/* Signature gradient — violet to indigo/blue, warmed with a touch of the logo's pink */
 .gradient-accent {
   background-image: linear-gradient(
     135deg,
-    var(--color-accent) 0%,
+    color-mix(in srgb, var(--color-accent) 82%, var(--color-accent-pink) 18%) 0%,
     var(--color-accent-2) 100%
   );
 }
@@ -91,7 +91,7 @@ h4,
   background-image: linear-gradient(
     135deg,
     var(--color-accent-2) 0%,
-    var(--color-accent) 100%
+    color-mix(in srgb, var(--color-accent) 82%, var(--color-accent-pink) 18%) 100%
   );
 }
 
