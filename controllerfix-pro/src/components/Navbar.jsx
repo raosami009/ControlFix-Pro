@@ -38,7 +38,13 @@ export default function Navbar() {
     e.preventDefault()
     document.body.style.overflow = ""
     setOpen(false)
-    document.querySelector(href)?.scrollIntoView({ behavior: "smooth", block: "start" })
+    const id = href.slice(1)
+    requestAnimationFrame(() => {
+      const target = document.getElementById(id)
+      if (!target) return
+      const top = target.getBoundingClientRect().top + window.scrollY - 96
+      window.scrollTo({ top, behavior: "smooth" })
+    })
   }
 
   return (
