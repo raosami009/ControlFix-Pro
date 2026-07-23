@@ -35,7 +35,7 @@ export default function Navbar() {
   }, [open])
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-5 sm:pt-5">
+    <header className="fixed inset-x-0 top-0 z-50 px-3 pt-2 sm:px-5 sm:pt-3">
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:text-white"
@@ -44,7 +44,7 @@ export default function Navbar() {
       </a>
 
       <nav
-        className={`mx-auto flex max-w-content items-center justify-between rounded-full border px-4 py-2 transition-all duration-300 sm:px-5 lg:px-6 ${
+        className={`mx-auto flex max-w-5xl items-center justify-between rounded-full border px-4 py-2 transition-all duration-300 sm:px-5 lg:px-6 ${
           scrolled
             ? "border-white/10 bg-bg/80 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.7)] backdrop-blur-xl"
             : "border-white/5 bg-bg/50 backdrop-blur-lg"
@@ -101,7 +101,7 @@ export default function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="mx-auto mt-2 max-w-content overflow-hidden rounded-3xl border border-white/10 bg-bg/95 backdrop-blur-xl lg:hidden"
+            className="mx-auto mt-2 max-w-5xl overflow-hidden rounded-3xl border border-white/10 bg-bg/95 backdrop-blur-xl lg:hidden"
           >
             <ul className="flex flex-col gap-1 px-4 py-4">
               {navLinks.map((link) => {

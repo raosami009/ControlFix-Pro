@@ -28,12 +28,12 @@ export default function Hero() {
       <div className="relative mx-auto grid max-w-content items-center gap-16 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:px-10">
         <div>
           <Reveal>
-            <span className="font-heading text-xl font-bold uppercase tracking-[0.08em] text-white">
+            <span className="font-heading text-sm font-semibold uppercase tracking-[0.2em] text-white/80">
               Controller<span className="text-gradient-fix">Fix</span> Pro
             </span>
           </Reveal>
 
-          <Reveal delay={0.14} className="mt-8 flex gap-4">
+          <Reveal delay={0.14} className="mt-3 flex gap-4">
             <span
               aria-hidden
               className="mt-1.5 h-auto w-[3px] shrink-0 rounded-full bg-gradient-to-b from-accent to-accent-2"
