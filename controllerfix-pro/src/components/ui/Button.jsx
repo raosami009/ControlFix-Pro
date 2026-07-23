@@ -1,7 +1,7 @@
 import { motion } from "motion/react"
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-full font-medium whitespace-nowrap transition-colors duration-300"
+  "inline-flex items-center justify-center gap-2 rounded-full font-medium whitespace-nowrap cursor-pointer transition-colors duration-300"
 
 const variants = {
   primary:
