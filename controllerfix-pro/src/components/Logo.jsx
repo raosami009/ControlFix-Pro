@@ -1,7 +1,7 @@
 import iconMark from "../assets/brand/icon-mark-transparent.png"
 
 export default function Logo({ variant = "full", size = "md", className = "" }) {
-  const iconBox = size === "lg" ? "h-14 w-28" : "h-8 w-8"
+  const iconHeight = size === "lg" ? "h-9" : "h-7"
 
   return (
     <a
@@ -9,11 +9,11 @@ export default function Logo({ variant = "full", size = "md", className = "" }) 
       className={`flex items-center gap-2.5 font-heading font-bold tracking-wide ${className}`}
       aria-label="ControllerFix Pro — home"
     >
-      <span className={`${iconBox} shrink-0`}>
+      <span className={`${iconHeight} w-auto shrink-0`}>
         <img
           src={iconMark}
           alt=""
-          className="h-full w-full object-contain drop-shadow-[0_0_12px_rgba(138,43,226,0.65)]"
+          className="h-full w-auto object-contain drop-shadow-[0_0_12px_rgba(138,43,226,0.65)]"
         />
       </span>
       {variant === "full" && (

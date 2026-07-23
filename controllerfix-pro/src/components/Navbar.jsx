@@ -34,8 +34,15 @@ export default function Navbar() {
     }
   }, [open])
 
+  const handleMobileNavClick = (e, href) => {
+    e.preventDefault()
+    document.body.style.overflow = ""
+    setOpen(false)
+    document.querySelector(href)?.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-3 pt-2 sm:px-5 sm:pt-3">
+    <header className="fixed inset-x-0 top-0 z-50 px-3 pt-1 sm:px-5 sm:pt-1.5">
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:text-white"
@@ -44,7 +51,7 @@ export default function Navbar() {
       </a>
 
       <nav
-        className={`mx-auto flex max-w-5xl items-center justify-between rounded-full border px-4 py-2 transition-all duration-300 sm:px-5 lg:px-6 ${
+        className={`mx-auto flex max-w-5xl items-center justify-between rounded-full border px-4 py-3.5 transition-all duration-300 sm:px-5 lg:px-6 ${
           scrolled
             ? "border-white/10 bg-bg/80 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.7)] backdrop-blur-xl"
             : "border-white/5 bg-bg/50 backdrop-blur-lg"
@@ -86,11 +93,11 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="grid h-10 w-10 place-items-center rounded-full text-white lg:hidden"
+          className="grid h-11 w-11 place-items-center rounded-full text-white lg:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
+          {open ? <X size={28} /> : <Menu size={28} />}
         </button>
       </nav>
 
@@ -110,7 +117,7 @@ export default function Navbar() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      onClick={() => setOpen(false)}
+                      onClick={(e) => handleMobileNavClick(e, link.href)}
                       className={`block rounded-xl px-3 py-3 text-base font-medium ${
                         isActive
                           ? "bg-white/8 text-white"
@@ -127,7 +134,7 @@ export default function Navbar() {
                   as="a"
                   href="#contact"
                   variant="primary"
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => handleMobileNavClick(e, "#contact")}
                   className="w-full"
                 >
                   Repair Now

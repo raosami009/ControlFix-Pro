@@ -1,6 +1,6 @@
 import { useRef } from "react"
 import { motion, useInView } from "motion/react"
-import { ArrowRight, ShieldCheck } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Reveal from "./ui/Reveal"
 import Button from "./ui/Button"
 import StatItem from "./ui/StatItem"
@@ -92,23 +92,6 @@ export default function Hero() {
               width={1065}
               height={750}
             />
-          </Reveal>
-
-          <Reveal
-            delay={0.4}
-            className="glass-panel mx-auto mt-6 flex max-w-xs items-center gap-3 rounded-2xl p-4 lg:mx-0"
-          >
-            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-accent/20 text-accent-2-soft">
-              <ShieldCheck size={18} />
-            </span>
-            <span>
-              <span className="block text-xs uppercase tracking-wide text-text-faint">
-                Every repair includes
-              </span>
-              <span className="block font-heading text-sm font-semibold text-white">
-                Full Parts &amp; Labor Warranty
-              </span>
-            </span>
           </Reveal>
         </div>
       </div>
