@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar"
+import ScrollProgress from "./components/ScrollProgress"
 import WhatsAppFab from "./components/WhatsAppFab"
 import Hero from "./components/Hero"
 import Highlights from "./components/Highlights"
@@ -19,6 +20,7 @@ import Footer from "./components/Footer"
 export default function App() {
   return (
     <>
+      <ScrollProgress />
       <Navbar />
       <main id="main-content">
         <Hero />
