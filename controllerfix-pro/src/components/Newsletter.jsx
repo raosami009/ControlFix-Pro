@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Send } from "lucide-react"
 import Reveal from "./ui/Reveal"
 import Button from "./ui/Button"
-import controllerImage from "../assets/images/dualsense-controller-front.png"
+import controllerImage from "../assets/images/newsletter-controller.png"
 
 const CONTACT_EMAIL = "hello@controlfixpro.com"
 

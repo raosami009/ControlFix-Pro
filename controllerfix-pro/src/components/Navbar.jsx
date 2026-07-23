@@ -50,7 +50,7 @@ export default function Navbar() {
             : "border-white/5 bg-bg/50 backdrop-blur-lg"
         }`}
       >
-        <Logo variant="icon" />
+        <Logo variant="icon" size="lg" />
 
         <ul className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => {

@@ -28,26 +28,14 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-content items-center gap-16 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:px-10">
         <div>
-          <Reveal className="flex items-center gap-2.5">
-            <img src={iconMark} alt="" className="h-7 w-7" />
-            <span className="font-heading text-sm font-bold uppercase tracking-[0.25em] text-white">
+          <Reveal className="flex items-center gap-3">
+            <img src={iconMark} alt="" className="h-11 w-11 shrink-0" />
+            <span className="font-heading text-xl font-bold uppercase tracking-[0.08em] text-white">
               Controller<span className="text-gradient-fix">Fix</span> Pro
             </span>
           </Reveal>
 
-          <Reveal delay={0.08} className="mt-5 flex flex-wrap gap-3">
-            {["Xbox Certified", "PS5 Specialist"].map((badge) => (
-              <span
-                key={badge}
-                className="glass-panel inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-text-muted"
-              >
-                <span className="h-1.5 w-1.5 rounded-full bg-accent-2-soft" />
-                {badge}
-              </span>
-            ))}
-          </Reveal>
-
-          <Reveal delay={0.16} className="mt-7 flex gap-4">
+          <Reveal delay={0.14} className="mt-8 flex gap-4">
             <span
               aria-hidden
               className="mt-1.5 h-auto w-[3px] shrink-0 rounded-full bg-gradient-to-b from-accent to-accent-2"
@@ -55,11 +43,11 @@ export default function Hero() {
             <h1 className="text-balance font-heading text-[clamp(2.3rem,4vw+1rem,3.3rem)] font-extrabold leading-[1.1] text-white">
               PS5 &amp; Xbox Repair,
               <br />
-              Done Right.
+              <span className="text-gradient-fix">Done Right.</span>
             </h1>
           </Reveal>
 
-          <Reveal delay={0.24}>
+          <Reveal delay={0.22}>
             <p className="mt-6 max-w-md text-balance text-lg leading-relaxed text-text-muted">
               Stick drift, triggers, ports, and more — fixed fast, with a
               90-day warranty. Drop off in Mississauga or mail in from
@@ -67,7 +55,7 @@ export default function Hero() {
             </p>
           </Reveal>
 
-          <Reveal delay={0.32} className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4">
+          <Reveal delay={0.3} className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4">
             <Button as="a" href="#contact" variant="primary">
               Book Your Repair
             </Button>
@@ -83,37 +71,36 @@ export default function Hero() {
             </a>
           </Reveal>
 
-          <div ref={statsRef} className="mt-14 grid max-w-md grid-cols-3 gap-3">
+          <div ref={statsRef} className="mt-14 grid grid-cols-3 gap-4">
             {stats.slice(0, 3).map((stat, i) => (
               <div
                 key={stat.label}
-                className="rounded-2xl border border-line/70 px-3.5 py-4"
+                className="rounded-2xl border border-line/70 px-4 py-4"
               >
-                <StatItem stat={stat} inView={inView} delay={i * 0.08} />
+                <StatItem stat={stat} inView={inView} delay={i * 0.08} size="sm" />
               </div>
             ))}
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-md lg:max-w-none">
-          <Reveal delay={0.2} y={32} className="relative z-10">
+        <div className="mx-auto w-full max-w-md lg:max-w-none">
+          <Reveal delay={0.2} y={32}>
             <motion.img
               src={heroImage}
               alt="PS5 controller floating, freshly repaired"
               className="w-full drop-shadow-[0_35px_60px_rgba(76,111,255,0.25)]"
               animate={{ y: [0, -14, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              width={1100}
-              height={618}
+              width={1065}
+              height={750}
             />
           </Reveal>
 
           <Reveal
-            delay={0.55}
-            y={16}
-            className="glass-panel absolute -bottom-2 -left-6 z-20 flex max-w-[15rem] items-start gap-3 rounded-2xl p-4 sm:-left-10"
+            delay={0.4}
+            className="glass-panel mx-auto mt-6 flex max-w-xs items-center gap-3 rounded-2xl p-4 lg:mx-0"
           >
-            <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-accent/20 text-accent-2-soft">
+            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-accent/20 text-accent-2-soft">
               <ShieldCheck size={18} />
             </span>
             <span>
