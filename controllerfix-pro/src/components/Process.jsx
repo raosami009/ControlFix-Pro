@@ -13,24 +13,25 @@ export default function Process() {
           subtitle="Three simple steps — whether you're across town in Mississauga or across the country."
         />
 
-        <div className="relative mt-20 grid gap-12 lg:grid-cols-3 lg:gap-10">
-          <motion.div
-            aria-hidden="true"
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true, amount: 0.6 }}
-            transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
-            style={{ transformOrigin: "left" }}
-            className="absolute left-[16%] right-[16%] top-7 hidden h-px bg-gradient-to-r from-accent via-accent-2 to-accent lg:block"
-          />
-
+        <div className="mt-20 grid gap-12 lg:grid-cols-3 lg:gap-10">
           {processSteps.map((step, i) => (
             <Reveal
               key={step.number}
               delay={i * 0.12}
-              className="relative text-center lg:text-left"
+              className="relative text-center"
             >
-              <span className="relative z-10 mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-accent/40 bg-bg font-heading text-lg font-bold text-white lg:mx-0">
+              {i < processSteps.length - 1 && (
+                <motion.span
+                  aria-hidden="true"
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 0.9, delay: i * 0.12 + 0.2, ease: [0.16, 1, 0.3, 1] }}
+                  style={{ transformOrigin: "left" }}
+                  className="absolute left-[calc(50%+1.75rem)] right-[calc(-0.75rem-50%)] top-7 hidden h-px bg-gradient-to-r from-accent via-accent-2 to-accent lg:block"
+                />
+              )}
+              <span className="relative z-10 mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-accent/40 bg-bg font-heading text-lg font-bold text-white">
                 {step.number}
               </span>
               <h3 className="mt-5 font-heading text-xl font-semibold text-white">
