@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar"
+import WhatsAppFab from "./components/WhatsAppFab"
 import Hero from "./components/Hero"
 import Highlights from "./components/Highlights"
 import TrustStrip from "./components/TrustStrip"
@@ -36,6 +37,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppFab />
     </>
   )
 }
