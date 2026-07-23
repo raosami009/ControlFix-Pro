@@ -23,8 +23,17 @@ const iconMap = {
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-24 lg:py-32">
-      <div className="mx-auto max-w-content px-6 lg:px-10">
+    <section id="services" className="relative overflow-hidden py-24 lg:py-32">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-0 h-[28rem] w-[28rem] -translate-x-1/2 -translate-y-1/3 rounded-full bg-accent/15 blur-[120px]"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-0 right-0 h-[22rem] w-[22rem] translate-x-1/4 translate-y-1/4 rounded-full bg-accent-2/15 blur-[110px]"
+      />
+
+      <div className="relative mx-auto max-w-content px-6 lg:px-10">
         <SectionHeading
           eyebrow="Our Services"
           title="Every fix, one flat price."
@@ -38,9 +47,9 @@ export default function Services() {
               <Reveal
                 key={name}
                 delay={(i % 3) * 0.08}
-                className="group relative flex flex-col rounded-2xl border border-line/70 bg-bg-panel-soft/60 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-[0_20px_45px_-25px_rgba(138,43,226,0.55)]"
+                className="group glass-panel relative flex flex-col rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-[0_15px_35px_-15px_rgba(138,43,226,0.55)]"
               >
-                <span className="grid h-12 w-12 place-items-center rounded-xl bg-accent/15 text-accent-2-soft transition-colors duration-300 group-hover:bg-accent/25">
+                <span className="grid h-12 w-12 place-items-center rounded-xl bg-accent/20 text-accent-2-soft transition-colors duration-300 group-hover:bg-accent/30">
                   <Icon size={22} />
                 </span>
                 <h3 className="mt-5 font-heading text-lg font-semibold text-white">
@@ -54,9 +63,11 @@ export default function Services() {
                     {note}
                   </p>
                 )}
-                <p className="mt-5 font-heading text-base font-bold text-gradient-fix">
-                  {price}
-                </p>
+                <span className="mt-5 inline-flex w-fit items-center rounded-full border border-accent/30 bg-white/5 px-3.5 py-1.5">
+                  <span className="font-heading text-sm font-bold text-gradient-fix">
+                    {price}
+                  </span>
+                </span>
               </Reveal>
             )
           })}
@@ -64,7 +75,7 @@ export default function Services() {
 
         <Reveal
           delay={0.1}
-          className="relative mt-16 overflow-hidden rounded-[2rem] border border-line/70 bg-bg-panel-soft/50 px-6 py-12 text-center sm:px-10"
+          className="glass-panel relative mt-16 overflow-hidden rounded-[2rem] px-6 py-12 text-center sm:px-10"
         >
           <img
             src={xboxOutline}
